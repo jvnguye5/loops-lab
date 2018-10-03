@@ -82,17 +82,9 @@ int main()
             break;
             case 5:
             {
-                int min;
+                int num;
                 cout << "\nEnter a negative number: ";
-                cin >> min;
-
-                if (min < 0)
-                {
-                    for (int i = 1; i >= min; i--)
-                    {
-                        printf("%d ", i);
-                    }
-                }
+                cin >> num;
             }
             break;
             case 6:
@@ -113,6 +105,7 @@ int main()
 
                 return 0;
             }
+            break;
             case 9:
             { // draw a right triangle
 
@@ -123,7 +116,23 @@ int main()
                     cout << endl;
                 }
             }
-
+            break;
+            case 10:
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    for (int j = 0; j < i; j++)
+                    {
+                        printf(" ");
+                    }
+                    for (int j = i; j < 10; j++)
+                    {
+                        printf("*");
+                    }
+                    printf("\n");
+                }
+            }
+            break;
             default:
                 cout << " ERROR - Please choose a number 1-4.\n";
         }
