@@ -85,7 +85,20 @@ int main()
                 int num;
                 cout << "\nEnter a negative number: ";
                 cin >> num;
+                
+                if( min < 0)
+                {
+                    for(int i = min; i <= 1; i++)
+                    {
+                        printf("%d ",i);
+                    }
+                }
             }
+                break;
+            case 8:
+            {
+                
+        
             case 9:
             { // draw a right triangle
 
@@ -98,7 +111,7 @@ int main()
             }
 
             default:
-                cout << " ERROR - Please choose a number 1-4.\n";
+                cout << " ERROR - Please choose a number 1-11.\n";
         }
 
     } while (choice != 11);
