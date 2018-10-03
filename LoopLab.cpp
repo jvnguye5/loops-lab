@@ -71,7 +71,7 @@ int main()
                 printf("Enter a number: ");
                 cin >> max;
 
-                    if (max > 0)
+                if (max > 0)
                 {
                     for (int i = 1; i <= max; i++)
                     {
@@ -87,15 +87,15 @@ int main()
                 cin >> num;
             }
             case 9:
-                {// draw a right triangle
-                
+            { // draw a right triangle
+
                 for (int row = 1; row <= 10; row++) // counts how many rows
                 {
                     for (int x = 1; x <= row; x++) // counts how many x's across
                         cout << "x";
                     cout << endl;
                 }
-                }
+            }
 
             default:
                 cout << " ERROR - Please choose a number 1-4.\n";
