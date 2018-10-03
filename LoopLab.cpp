@@ -94,11 +94,25 @@ int main()
                     }
                 }
             }
-                break;
-            case 8:
+            break;
+            case 6:
             {
-                
-        
+                cout << "Please enter a positive number: ";
+                int max;
+                cin >> max;
+                int total = 0;
+
+                for (int i = 2; i <= max; i++)
+                {
+                    if (i % 2 == 0)
+                    {
+                        total += i;
+                    }
+                }
+                printf("%d", total);
+
+                return 0;
+            }
             case 9:
             { // draw a right triangle
 
@@ -111,7 +125,7 @@ int main()
             }
 
             default:
-                cout << " ERROR - Please choose a number 1-11.\n";
+                cout << " ERROR - Please choose a number 1-4.\n";
         }
 
     } while (choice != 11);
