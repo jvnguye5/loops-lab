@@ -134,7 +134,7 @@ int main()
             }
             break;
             default:
-                cout << " ERROR - Please choose a number 1-4.\n";
+                cout << " ERROR - Please choose a number 1-11.\n";
         }
 
     } while (choice != 11);
