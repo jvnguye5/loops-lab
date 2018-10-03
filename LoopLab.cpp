@@ -82,15 +82,15 @@ int main()
             break;
             case 5:
             {
-                int num;
+                int min;
                 cout << "\nEnter a negative number: ";
-                cin >> num;
-                
-                if( min < 0)
+                cin >> min;
+
+                if (min < 0)
                 {
-                    for(int i = min; i <= 1; i++)
+                    for (int i = 1; i >= min; i--)
                     {
-                        printf("%d ",i);
+                        printf("%d ", i);
                     }
                 }
             }
