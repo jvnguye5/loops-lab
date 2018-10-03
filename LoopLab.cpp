@@ -1,4 +1,4 @@
-/********************************************************
+/*******************************************************
     This program will be a menu driven program where
     the user will be prompted through the menu until
     option 11.
