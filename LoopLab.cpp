@@ -6,7 +6,7 @@
     Name: Aleksandar Andric
     date: 9/30/18
 ********************************************************/
-#include < iostream >
+#include <iostream>
 using namespace std;
 
 int main()
@@ -69,7 +69,7 @@ int main()
             {
                 int max;
                 printf("Enter a number: ");
-                cin >> max
+                cin >> max;
 
                     if (max > 0)
                 {
@@ -87,12 +87,14 @@ int main()
                 cin >> num;
             }
             case 9:
-                // draw a right triangle
-                for (int row = 1; row <= size; row++) // counts how many rows
+                {// draw a right triangle
+                
+                for (int row = 1; row <= 10; row++) // counts how many rows
                 {
                     for (int x = 1; x <= row; x++) // counts how many x's across
                         cout << "x";
                     cout << endl;
+                }
                 }
 
             default:
