@@ -1,3 +1,4 @@
+
 /********************************************************
     This program will be a menu driven program where
     the user will be prompted through the menu until
@@ -133,6 +134,8 @@ int main()
                 }
             }
             break;
+            case 11:
+                break;
             default:
                 cout << " ERROR - Please choose a number 1-11.\n";
         }
@@ -140,3 +143,8 @@ int main()
     } while (choice != 11);
     return 0;
 }
+
+Format!Style:
+C++ online code formatter © 2014 by KrzaQ
+
+Powered by vibe.d, the D language and clang-format
