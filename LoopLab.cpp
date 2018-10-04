@@ -2,7 +2,6 @@
     This program will be a menu driven program where
     the user will be prompted through the menu until
     option 11.
-
     Name: Aleksandar Andric
     date: 9/30/18
 ********************************************************/
@@ -36,7 +35,7 @@ int main()
 
         switch (choice)
         {
-            case 1:                         // while loop
+            case 1: // while loop
             {
                 int a = 0;
                 while (a < 15)
@@ -46,7 +45,7 @@ int main()
                 }
             }
             break;
-            case 2:                         // for loop
+            case 2: // for loop
             {
                 for (int b = 0; b < 15; b++)
                 {
@@ -54,7 +53,7 @@ int main()
                 }
             }
             break;
-            case 3:                         // odd numbers 1-50
+            case 3: // odd numbers 1-50
             {
                 for (int i = 1; i <= 50; i++)
                 {
@@ -65,7 +64,7 @@ int main()
                 }
             }
             break;
-            case 4:                         // positive numbers
+            case 4: // positive numbers
             {
                 int max;
                 printf("Enter a number: ");
@@ -80,14 +79,22 @@ int main()
                 }
             }
             break;
-            case 5:                         // negative numbers
+            case 5: // negative numbers
             {
-                int num;
+                int min;
                 cout << "\nEnter a negative number: ";
-                cin  >> num;
+                cin >> min;
+
+                if (min < 0)
+                {
+                    for (int i = 1; i >= min; i--)
+                    {
+                        printf("%d ", i);
+                    }
+                }
             }
             break;
-            case 6:                         // sum of all even numbers
+            case 6: // sum of all even numbers
             {
                 int max;
                 cout << "Please enter a positive number: ";
@@ -102,11 +109,9 @@ int main()
                     }
                 }
                 printf("%d", total);
-
-                return 0;
             }
             break;
-            case 7:                                     // table of integers 
+            case 7: // table of integers
             {
                 int max;
                 cout << "Please enter a positive number: ";
@@ -124,28 +129,32 @@ int main()
                 }
             }
             break;
-            case 8;                                     // asterisk characters
-            { int line = 7; for (int i = 1, j = 0; i <= line; i++, j = 0)
-              {
-                  while (j != 2 * i - 1)
-                      {
-                          cout << " ";                  // blank space
-                          j++;
-                      }   cout << "*"
-                      << endl;                  
-              } 
-             case 9:                                    // draw a right triangle/ asterisk shape1
-             { 
-
-                for (int row = 1; row <= 10; row++)     // counts how many rows
+            case 8: // asterisk characters
+            {
+                int line = 7;
+                for (int i = 1, j = 0; i <= line; i++, j = 0)
                 {
-                    for (int x = 1; x <= row; x++)      // counts how many *'s across
-                        cout << "*";
-                        cout << endl;
+                    while (j != 2 * i - 1)
+                    {
+                        cout << " "; // blank space
+                        j++;
+                    }
+                    cout << "*" << endl;
                 }
             }
             break;
-            case 10:                                    // asterisk shape2
+            case 9: // draw a right triangle/ asterisk shape1
+            {
+
+                for (int row = 1; row <= 10; row++) // counts how many rows
+                {
+                    for (int x = 1; x <= row; x++) // counts how many *'s across
+                        cout << "*";
+                    cout << endl;
+                }
+            }
+            break;
+            case 10: // asterisk shape2
             {
                 for (int i = 0; i < 10; i++)
                 {
@@ -161,7 +170,7 @@ int main()
                 }
             }
             break;
-            case 11:                                    // end
+            case 11: // end
                 break;
             default:
                 cout << " ERROR - Please choose a number 1-11.\n";
